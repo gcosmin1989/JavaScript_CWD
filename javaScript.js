@@ -1,0 +1,358 @@
+// // // // // // // // // // // // //Log to the console
+// // // // // // // // // // // // console.log('Salut din consol.log');
+// // // // // // // // // // // //
+// // // // // // // // // // // // console.log(12+2);
+// // // // // // // // // // // //
+// // // // // // // // // // // // //console error
+// // // // // // // // // // // //
+// // // // // // // // // // // // console.error('Eroare din console.error');
+// // // // // // // // // // // //
+// // // // // // // // // // // // //console a table
+// // // // // // // // // // // //
+// // // // // // // // // // // // console.table({a:1, b:2})
+// // // // // // // // // // //
+// // // // // // // // // // // //var - let - const
+// // // // // // // // // // // //Do not use any JS researved keyword(console)
+// // // // // // // // // // // // Should not start with a letter and uderscore
+// // // // // // // // // // // //Case sensitive name != Name
+// // // // // // // // // // // //Camel case fistName
+// // // // // // // // // // //
+// // // // // // // // // // // //Declare variables
+// // // // // // // // // // //
+// // // // // // // // // // // var name = 'Cosmin';
+// // // // // // // // // // // console.log(name);
+// // // // // // // // // // // name = 'Nini';
+// // // // // // // // // // // console.log(name);
+// // // // // // // // // // //
+// // // // // // // // // // // //variable without value
+// // // // // // // // // // // var job;
+// // // // // // // // // // // console.log(job)
+// // // // // // // // // // //
+// // // // // // // // // // // job='JavaScript';
+// // // // // // // // // // // console.log(job)
+// // // // // // // // // // //
+// // // // // // // // // // // //LET Variable
+// // // // // // // // // // //
+// // // // // // // // // // // let newName='John';
+// // // // // // // // // // // console.log(newName);
+// // // // // // // // // // //
+// // // // // // // // // // // //CONST variable - nu se pot schimba
+// // // // // // // // // // // const car ='Mercedes';
+// // // // // // // // // // // console.log(car);
+// // // // // // // // // // //
+// // // // // // // // // // // //Have to assign to a value
+// // // // // // // // // // // const persone ={
+// // // // // // // // // // //   name: 'John',
+// // // // // // // // // // //   age: 30
+// // // // // // // // // // // };
+// // // // // // // // // // // console.log(persone)
+// // // // // // // // // // // persone.name= 'Doe';
+// // // // // // // // // // // console.log(persone)
+// // // // // // // // // //
+// // // // // // // // // // //Data Types
+// // // // // // // // // //
+// // // // // // // // // // //Boolean
+// // // // // // // // // // //Null - nu are valoare
+// // // // // // // // // // //Undefined - este o variabil definita fara valoare
+// // // // // // // // // // //Number -
+// // // // // // // // // // //String
+// // // // // // // // // // //Symbol - o valoare unica
+// // // // // // // // // //
+// // // // // // // // // //
+// // // // // // // // // // //String
+// // // // // // // // // // let name='Cosmin42433423423';
+// // // // // // // // // //
+// // // // // // // // // //
+// // // // // // // // // // //Number
+// // // // // // // // // // let age =24;
+// // // // // // // // // //
+// // // // // // // // // //
+// // // // // // // // // // //boolean
+// // // // // // // // // // let isTrue= true;
+// // // // // // // // // //
+// // // // // // // // // // //NULL
+// // // // // // // // // // let phone=null;
+// // // // // // // // // //
+// // // // // // // // // //
+// // // // // // // // // // //Undefined
+// // // // // // // // // // let car;
+// // // // // // // // // // car= 'Dacia';
+// // // // // // // // // //
+// // // // // // // // // // //Symbol
+// // // // // // // // // // let sa = Symbol();
+// // // // // // // // // //
+// // // // // // // // // //
+// // // // // // // // // // //REFERENCE TYPE= se intorc ca obiecte
+// // // // // // // // // // //const cars =['Dacia','Audi','BMW'];
+// // // // // // // // // // const cars = new Array('Dacia','Audi','BMW');
+// // // // // // // // // //
+// // // // // // // // // // //Object Literal
+// // // // // // // // // // var persInfo ={
+// // // // // // // // // //     city:'Bucharest',
+// // // // // // // // // //     state:'RO'
+// // // // // // // // // // }
+// // // // // // // // // //
+// // // // // // // // // // //Date
+// // // // // // // // // // const today = new Date();
+// // // // // // // // // // console.log(today);
+// // // // // // // // // // console.log(typeof today);
+// // // // // // // // //
+// // // // // // // // // //Type Conversion
+// // // // // // // // //
+// // // // // // // // // let val;
+// // // // // // // // // //Number to string
+// // // // // // // // // val = String(21);
+// // // // // // // // // val= String(2+2);
+// // // // // // // // //
+// // // // // // // // //
+// // // // // // // // // //Boolean to string
+// // // // // // // // // val=String(false);
+// // // // // // // // //
+// // // // // // // // // //Date to string
+// // // // // // // // // val=String(Date());
+// // // // // // // // //
+// // // // // // // // // //Array to string
+// // // // // // // // // val=String([1,2,3,4,5,6]);
+// // // // // // // // //
+// // // // // // // // // //toString function
+// // // // // // // // // val = (5).toString();
+// // // // // // // // //
+// // // // // // // // // //String to number
+// // // // // // // // // val =Number('5');
+// // // // // // // // //
+// // // // // // // // // //bool to number
+// // // // // // // // // val= Number(false);
+// // // // // // // // // //False === 0
+// // // // // // // // // //True === 1
+// // // // // // // // //
+// // // // // // // // // //String to number
+// // // // // // // // // val=Number('My name is')
+// // // // // // // // // //NaN === Not a number
+// // // // // // // // //
+// // // // // // // // //
+// // // // // // // // // //ParseInt
+// // // // // // // // // val = parseInt('15');
+// // // // // // // // //
+// // // // // // // // //
+// // // // // // // // // //ParsFloat
+// // // // // // // // //
+// // // // // // // // // val = parseFloat('15.15');
+// // // // // // // // // console.log(val);
+// // // // // // // // // console.log(typeof  val);
+// // // // // // // // // console.log(val.toFixed(2));
+// // // // // // // //
+// // // // // // // // //Arithmetic operators
+// // // // // // // // const num1 = 110;
+// // // // // // // // const num2 = 50;
+// // // // // // // // let val;
+// // // // // // // //
+// // // // // // // // //Addition
+// // // // // // // // val = num1 + num2;
+// // // // // // // //
+// // // // // // // // //Subtraction
+// // // // // // // // val = num1 - num2;
+// // // // // // // //
+// // // // // // // // //Multiply
+// // // // // // // // val = num1 * num2;
+// // // // // // // //
+// // // // // // // // //Divide
+// // // // // // // // val = num1 / num2;
+// // // // // // // //
+// // // // // // // // //Modulus
+// // // // // // // // val = num1 % num2;
+// // // // // // // //
+// // // // // // // // //Increment -Decrement
+// // // // // // // // val = 1;
+// // // // // // // // val++;
+// // // // // // // // ++val;
+// // // // // // // // val--;
+// // // // // // // // --val;
+// // // // // // // // console.log(val);
+// // // // // // //
+// // // // // // // //Math Objects
+// // // // // // // let mat;
+// // // // // // // mat = Math.PI;
+// // // // // // //
+// // // // // // //
+// // // // // // // //Specify round number
+// // // // // // // mat = Math.ceil(2.1);
+// // // // // // // mat = Math.floor(2.9);
+// // // // // // //
+// // // // // // // //Round number
+// // // // // // // mat = Math.round(2.6);
+// // // // // // //
+// // // // // // // //Sqare
+// // // // // // // mat = Math.sqrt(65);
+// // // // // // //
+// // // // // // // //Absolute value
+// // // // // // // mat = Math.abs(-3);
+// // // // // // //
+// // // // // // // //Power of a number
+// // // // // // // mat = Math.pow(3, 2);
+// // // // // // //
+// // // // // // // //Minimum or Maximum
+// // // // // // //
+// // // // // // // mat = Math.min(2,25,29,10,-3);
+// // // // // // // mat = Math.max(2,35,29,10,-3);
+// // // // // // // console.log(mat);
+// // // // // // //
+// // // // // // //
+// // // // // // //Concatenation & Appending
+// // // // // //
+// // // // // // const firstName = 'Cosmin';
+// // // // // // const lastName = 'Ghe.';
+// // // // // // const age =25;
+// // // // // // let val;
+// // // // // // val = firstName + " I'm " + lastName + ' age ' +age;
+// // // // // //
+// // // // // //
+// // // // // // //Appending
+// // // // // // val = 'Cosmin';
+// // // // // // val +=' Gheg.'
+// // // // // // val +=age;
+// // // // // // console.log(val);
+// // // // // // console.log(typeof val);
+// // // // //
+// // // // //
+// // // // // //Interpolation
+// // // // // const firstName ='Cosmin';
+// // // // // const lastName ='Hal';
+// // // // // const age = 25;
+// // // // // let val;
+// // // // // val = `My name is ${firstName} and my last name is ${lastName} and my age is ${age}.`
+// // // // // console.log(val)
+// // // //
+// // // // //Comparison Operators
+// // // // const x = 20;
+// // // // const y = 10;
+// // // //
+// // // // //  == returns true or false
+// // // // console.log(x == y);
+// // // //
+// // // // // === Strict equal -- Checks for value and type
+// // // // console.log(x === y);
+// // // //
+// // // // // != not equal
+// // // // console.log(x != y);
+// // // //
+// // // // // !== strict not equal
+// // // // console.log(x !== y);
+// // // //
+// // // // //> Greater than
+// // // // console.log(x > y);
+// // // //
+// // // // //> Greater than or equal
+// // // // console.log(x >= y);
+// // // //
+// // // // //> Less than
+// // // // console.log(x < y);
+// // // //
+// // // // //> Less than or equal
+// // // // console.log(x <= y);
+// // //
+// // // //Logical Operates
+// // //
+// // // let x = 20;
+// // // let y = 20;
+// // //
+// // // //&&(and)
+// // // if (x > 20 && y < 40) {
+// // //     console.log('true');
+// // // } else {
+// // //     console.log('false');
+// // // }
+// // //
+// // // //|| (or)
+// // // if (x > 22 || y < 40) {
+// // //     console.log('true');
+// // // } else {
+// // //     console.log('false');
+// // // }
+// // //
+// // // //! (not)
+// // // x = true;
+// // // y = false;
+// // //
+// // // if (!x) {
+// // //     console.log('true');
+// // // } else {
+// // //     console.log('false');
+// // // }
+// // //
+// // // //Ternary Operator
+// // // const z = y ? 'True' : 'False';
+// // //
+// // // console.log(z);
+// //
+// // //Assignment operatos
+// // const x = 10;
+// // const y = 20;
+// // let val = 15;
+// //
+// // //+=Adds and assign operators
+// // val += 5;
+// //
+// // //-=Substract and assign operators
+// // val -= 2;
+// //
+// // //*=Multiply and assign operators
+// // val *= 3;
+// //
+// // // /=Divide and assign operators
+// // val /= 4;
+// //
+// // // %=Modulus and assign operators
+// // val %= 5;
+// // console.log(val)
+//
+// //Arrays amd Array Methods
+//
+// //Brackets
+// const jobs =['Developer','PHP', 'Javascript'];
+//
+// //Array Constructor
+// const varsta = new Array(22,23,31,8,12);
+//
+// //Mixed data types
+// const mixed =[24, 'Cosmin', 'Romania', undefined, true ];
+//
+// //Mutate to show diferent things
+// let test;
+//
+// //Get the lenght of the array
+// test=varsta.length;
+//
+// //Check if it an array
+// test = Array.isArray(varsta);
+//
+// //Get specific Value
+// //Index always starts with 0
+// test = jobs[1];
+//
+// //Add value to an array
+// jobs.push('Data Analyst');
+//
+// //Remove value from an array
+// jobs.pop();
+//
+// //Remove the test values
+// test = jobs.shift();
+//
+// //Unshift
+// test = jobs.unshift('Data Analyst')
+//
+// //Create a complete string
+// test = jobs.join(' ')
+//
+// //Reverse
+// //Changes will be permanently
+// test = varsta.reverse();
+//
+// //Sort
+// test = varsta.sort();
+//
+// console.log(test);
+// console.log(test);
+//
+//Date and Time
+
