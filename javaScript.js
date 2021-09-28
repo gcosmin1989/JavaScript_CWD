@@ -1,358 +1,380 @@
-// // // // // // // // // // // // //Log to the console
-// // // // // // // // // // // // console.log('Salut din consol.log');
+// // // // // // // // // // // // // //Log to the console
+// // // // // // // // // // // // // console.log('Salut din consol.log');
+// // // // // // // // // // // // //
+// // // // // // // // // // // // // console.log(12+2);
+// // // // // // // // // // // // //
+// // // // // // // // // // // // // //console error
+// // // // // // // // // // // // //
+// // // // // // // // // // // // // console.error('Eroare din console.error');
+// // // // // // // // // // // // //
+// // // // // // // // // // // // // //console a table
+// // // // // // // // // // // // //
+// // // // // // // // // // // // // console.table({a:1, b:2})
 // // // // // // // // // // // //
-// // // // // // // // // // // // console.log(12+2);
+// // // // // // // // // // // // //var - let - const
+// // // // // // // // // // // // //Do not use any JS researved keyword(console)
+// // // // // // // // // // // // // Should not start with a letter and uderscore
+// // // // // // // // // // // // //Case sensitive name != Name
+// // // // // // // // // // // // //Camel case fistName
 // // // // // // // // // // // //
-// // // // // // // // // // // // //console error
+// // // // // // // // // // // // //Declare variables
 // // // // // // // // // // // //
-// // // // // // // // // // // // console.error('Eroare din console.error');
+// // // // // // // // // // // // var name = 'Cosmin';
+// // // // // // // // // // // // console.log(name);
+// // // // // // // // // // // // name = 'Nini';
+// // // // // // // // // // // // console.log(name);
 // // // // // // // // // // // //
-// // // // // // // // // // // // //console a table
+// // // // // // // // // // // // //variable without value
+// // // // // // // // // // // // var job;
+// // // // // // // // // // // // console.log(job)
 // // // // // // // // // // // //
-// // // // // // // // // // // // console.table({a:1, b:2})
+// // // // // // // // // // // // job='JavaScript';
+// // // // // // // // // // // // console.log(job)
+// // // // // // // // // // // //
+// // // // // // // // // // // // //LET Variable
+// // // // // // // // // // // //
+// // // // // // // // // // // // let newName='John';
+// // // // // // // // // // // // console.log(newName);
+// // // // // // // // // // // //
+// // // // // // // // // // // // //CONST variable - nu se pot schimba
+// // // // // // // // // // // // const car ='Mercedes';
+// // // // // // // // // // // // console.log(car);
+// // // // // // // // // // // //
+// // // // // // // // // // // // //Have to assign to a value
+// // // // // // // // // // // // const persone ={
+// // // // // // // // // // // //   name: 'John',
+// // // // // // // // // // // //   age: 30
+// // // // // // // // // // // // };
+// // // // // // // // // // // // console.log(persone)
+// // // // // // // // // // // // persone.name= 'Doe';
+// // // // // // // // // // // // console.log(persone)
 // // // // // // // // // // //
-// // // // // // // // // // // //var - let - const
-// // // // // // // // // // // //Do not use any JS researved keyword(console)
-// // // // // // // // // // // // Should not start with a letter and uderscore
-// // // // // // // // // // // //Case sensitive name != Name
-// // // // // // // // // // // //Camel case fistName
+// // // // // // // // // // // //Data Types
 // // // // // // // // // // //
-// // // // // // // // // // // //Declare variables
+// // // // // // // // // // // //Boolean
+// // // // // // // // // // // //Null - nu are valoare
+// // // // // // // // // // // //Undefined - este o variabil definita fara valoare
+// // // // // // // // // // // //Number -
+// // // // // // // // // // // //String
+// // // // // // // // // // // //Symbol - o valoare unica
 // // // // // // // // // // //
-// // // // // // // // // // // var name = 'Cosmin';
-// // // // // // // // // // // console.log(name);
-// // // // // // // // // // // name = 'Nini';
-// // // // // // // // // // // console.log(name);
 // // // // // // // // // // //
-// // // // // // // // // // // //variable without value
-// // // // // // // // // // // var job;
-// // // // // // // // // // // console.log(job)
+// // // // // // // // // // // //String
+// // // // // // // // // // // let name='Cosmin42433423423';
 // // // // // // // // // // //
-// // // // // // // // // // // job='JavaScript';
-// // // // // // // // // // // console.log(job)
 // // // // // // // // // // //
-// // // // // // // // // // // //LET Variable
+// // // // // // // // // // // //Number
+// // // // // // // // // // // let age =24;
 // // // // // // // // // // //
-// // // // // // // // // // // let newName='John';
-// // // // // // // // // // // console.log(newName);
 // // // // // // // // // // //
-// // // // // // // // // // // //CONST variable - nu se pot schimba
-// // // // // // // // // // // const car ='Mercedes';
-// // // // // // // // // // // console.log(car);
+// // // // // // // // // // // //boolean
+// // // // // // // // // // // let isTrue= true;
 // // // // // // // // // // //
-// // // // // // // // // // // //Have to assign to a value
-// // // // // // // // // // // const persone ={
-// // // // // // // // // // //   name: 'John',
-// // // // // // // // // // //   age: 30
-// // // // // // // // // // // };
-// // // // // // // // // // // console.log(persone)
-// // // // // // // // // // // persone.name= 'Doe';
-// // // // // // // // // // // console.log(persone)
+// // // // // // // // // // // //NULL
+// // // // // // // // // // // let phone=null;
+// // // // // // // // // // //
+// // // // // // // // // // //
+// // // // // // // // // // // //Undefined
+// // // // // // // // // // // let car;
+// // // // // // // // // // // car= 'Dacia';
+// // // // // // // // // // //
+// // // // // // // // // // // //Symbol
+// // // // // // // // // // // let sa = Symbol();
+// // // // // // // // // // //
+// // // // // // // // // // //
+// // // // // // // // // // // //REFERENCE TYPE= se intorc ca obiecte
+// // // // // // // // // // // //const cars =['Dacia','Audi','BMW'];
+// // // // // // // // // // // const cars = new Array('Dacia','Audi','BMW');
+// // // // // // // // // // //
+// // // // // // // // // // // //Object Literal
+// // // // // // // // // // // var persInfo ={
+// // // // // // // // // // //     city:'Bucharest',
+// // // // // // // // // // //     state:'RO'
+// // // // // // // // // // // }
+// // // // // // // // // // //
+// // // // // // // // // // // //Date
+// // // // // // // // // // // const today = new Date();
+// // // // // // // // // // // console.log(today);
+// // // // // // // // // // // console.log(typeof today);
 // // // // // // // // // //
-// // // // // // // // // // //Data Types
+// // // // // // // // // // //Type Conversion
 // // // // // // // // // //
-// // // // // // // // // // //Boolean
-// // // // // // // // // // //Null - nu are valoare
-// // // // // // // // // // //Undefined - este o variabil definita fara valoare
-// // // // // // // // // // //Number -
-// // // // // // // // // // //String
-// // // // // // // // // // //Symbol - o valoare unica
-// // // // // // // // // //
-// // // // // // // // // //
-// // // // // // // // // // //String
-// // // // // // // // // // let name='Cosmin42433423423';
-// // // // // // // // // //
-// // // // // // // // // //
-// // // // // // // // // // //Number
-// // // // // // // // // // let age =24;
-// // // // // // // // // //
-// // // // // // // // // //
-// // // // // // // // // // //boolean
-// // // // // // // // // // let isTrue= true;
-// // // // // // // // // //
-// // // // // // // // // // //NULL
-// // // // // // // // // // let phone=null;
-// // // // // // // // // //
-// // // // // // // // // //
-// // // // // // // // // // //Undefined
-// // // // // // // // // // let car;
-// // // // // // // // // // car= 'Dacia';
-// // // // // // // // // //
-// // // // // // // // // // //Symbol
-// // // // // // // // // // let sa = Symbol();
+// // // // // // // // // // let val;
+// // // // // // // // // // //Number to string
+// // // // // // // // // // val = String(21);
+// // // // // // // // // // val= String(2+2);
 // // // // // // // // // //
 // // // // // // // // // //
-// // // // // // // // // // //REFERENCE TYPE= se intorc ca obiecte
-// // // // // // // // // // //const cars =['Dacia','Audi','BMW'];
-// // // // // // // // // // const cars = new Array('Dacia','Audi','BMW');
+// // // // // // // // // // //Boolean to string
+// // // // // // // // // // val=String(false);
 // // // // // // // // // //
-// // // // // // // // // // //Object Literal
-// // // // // // // // // // var persInfo ={
-// // // // // // // // // //     city:'Bucharest',
-// // // // // // // // // //     state:'RO'
-// // // // // // // // // // }
+// // // // // // // // // // //Date to string
+// // // // // // // // // // val=String(Date());
 // // // // // // // // // //
-// // // // // // // // // // //Date
-// // // // // // // // // // const today = new Date();
-// // // // // // // // // // console.log(today);
-// // // // // // // // // // console.log(typeof today);
+// // // // // // // // // // //Array to string
+// // // // // // // // // // val=String([1,2,3,4,5,6]);
+// // // // // // // // // //
+// // // // // // // // // // //toString function
+// // // // // // // // // // val = (5).toString();
+// // // // // // // // // //
+// // // // // // // // // // //String to number
+// // // // // // // // // // val =Number('5');
+// // // // // // // // // //
+// // // // // // // // // // //bool to number
+// // // // // // // // // // val= Number(false);
+// // // // // // // // // // //False === 0
+// // // // // // // // // // //True === 1
+// // // // // // // // // //
+// // // // // // // // // // //String to number
+// // // // // // // // // // val=Number('My name is')
+// // // // // // // // // // //NaN === Not a number
+// // // // // // // // // //
+// // // // // // // // // //
+// // // // // // // // // // //ParseInt
+// // // // // // // // // // val = parseInt('15');
+// // // // // // // // // //
+// // // // // // // // // //
+// // // // // // // // // // //ParsFloat
+// // // // // // // // // //
+// // // // // // // // // // val = parseFloat('15.15');
+// // // // // // // // // // console.log(val);
+// // // // // // // // // // console.log(typeof  val);
+// // // // // // // // // // console.log(val.toFixed(2));
 // // // // // // // // //
-// // // // // // // // // //Type Conversion
-// // // // // // // // //
+// // // // // // // // // //Arithmetic operators
+// // // // // // // // // const num1 = 110;
+// // // // // // // // // const num2 = 50;
 // // // // // // // // // let val;
-// // // // // // // // // //Number to string
-// // // // // // // // // val = String(21);
-// // // // // // // // // val= String(2+2);
 // // // // // // // // //
+// // // // // // // // // //Addition
+// // // // // // // // // val = num1 + num2;
 // // // // // // // // //
-// // // // // // // // // //Boolean to string
-// // // // // // // // // val=String(false);
+// // // // // // // // // //Subtraction
+// // // // // // // // // val = num1 - num2;
 // // // // // // // // //
-// // // // // // // // // //Date to string
-// // // // // // // // // val=String(Date());
+// // // // // // // // // //Multiply
+// // // // // // // // // val = num1 * num2;
 // // // // // // // // //
-// // // // // // // // // //Array to string
-// // // // // // // // // val=String([1,2,3,4,5,6]);
+// // // // // // // // // //Divide
+// // // // // // // // // val = num1 / num2;
 // // // // // // // // //
-// // // // // // // // // //toString function
-// // // // // // // // // val = (5).toString();
+// // // // // // // // // //Modulus
+// // // // // // // // // val = num1 % num2;
 // // // // // // // // //
-// // // // // // // // // //String to number
-// // // // // // // // // val =Number('5');
-// // // // // // // // //
-// // // // // // // // // //bool to number
-// // // // // // // // // val= Number(false);
-// // // // // // // // // //False === 0
-// // // // // // // // // //True === 1
-// // // // // // // // //
-// // // // // // // // // //String to number
-// // // // // // // // // val=Number('My name is')
-// // // // // // // // // //NaN === Not a number
-// // // // // // // // //
-// // // // // // // // //
-// // // // // // // // // //ParseInt
-// // // // // // // // // val = parseInt('15');
-// // // // // // // // //
-// // // // // // // // //
-// // // // // // // // // //ParsFloat
-// // // // // // // // //
-// // // // // // // // // val = parseFloat('15.15');
+// // // // // // // // // //Increment -Decrement
+// // // // // // // // // val = 1;
+// // // // // // // // // val++;
+// // // // // // // // // ++val;
+// // // // // // // // // val--;
+// // // // // // // // // --val;
 // // // // // // // // // console.log(val);
-// // // // // // // // // console.log(typeof  val);
-// // // // // // // // // console.log(val.toFixed(2));
 // // // // // // // //
-// // // // // // // // //Arithmetic operators
-// // // // // // // // const num1 = 110;
-// // // // // // // // const num2 = 50;
-// // // // // // // // let val;
+// // // // // // // // //Math Objects
+// // // // // // // // let mat;
+// // // // // // // // mat = Math.PI;
 // // // // // // // //
-// // // // // // // // //Addition
-// // // // // // // // val = num1 + num2;
 // // // // // // // //
-// // // // // // // // //Subtraction
-// // // // // // // // val = num1 - num2;
+// // // // // // // // //Specify round number
+// // // // // // // // mat = Math.ceil(2.1);
+// // // // // // // // mat = Math.floor(2.9);
 // // // // // // // //
-// // // // // // // // //Multiply
-// // // // // // // // val = num1 * num2;
+// // // // // // // // //Round number
+// // // // // // // // mat = Math.round(2.6);
 // // // // // // // //
-// // // // // // // // //Divide
-// // // // // // // // val = num1 / num2;
+// // // // // // // // //Sqare
+// // // // // // // // mat = Math.sqrt(65);
 // // // // // // // //
-// // // // // // // // //Modulus
-// // // // // // // // val = num1 % num2;
+// // // // // // // // //Absolute value
+// // // // // // // // mat = Math.abs(-3);
 // // // // // // // //
-// // // // // // // // //Increment -Decrement
-// // // // // // // // val = 1;
-// // // // // // // // val++;
-// // // // // // // // ++val;
-// // // // // // // // val--;
-// // // // // // // // --val;
-// // // // // // // // console.log(val);
+// // // // // // // // //Power of a number
+// // // // // // // // mat = Math.pow(3, 2);
+// // // // // // // //
+// // // // // // // // //Minimum or Maximum
+// // // // // // // //
+// // // // // // // // mat = Math.min(2,25,29,10,-3);
+// // // // // // // // mat = Math.max(2,35,29,10,-3);
+// // // // // // // // console.log(mat);
+// // // // // // // //
+// // // // // // // //
+// // // // // // // //Concatenation & Appending
 // // // // // // //
-// // // // // // // //Math Objects
-// // // // // // // let mat;
-// // // // // // // mat = Math.PI;
-// // // // // // //
-// // // // // // //
-// // // // // // // //Specify round number
-// // // // // // // mat = Math.ceil(2.1);
-// // // // // // // mat = Math.floor(2.9);
-// // // // // // //
-// // // // // // // //Round number
-// // // // // // // mat = Math.round(2.6);
-// // // // // // //
-// // // // // // // //Sqare
-// // // // // // // mat = Math.sqrt(65);
-// // // // // // //
-// // // // // // // //Absolute value
-// // // // // // // mat = Math.abs(-3);
-// // // // // // //
-// // // // // // // //Power of a number
-// // // // // // // mat = Math.pow(3, 2);
-// // // // // // //
-// // // // // // // //Minimum or Maximum
-// // // // // // //
-// // // // // // // mat = Math.min(2,25,29,10,-3);
-// // // // // // // mat = Math.max(2,35,29,10,-3);
-// // // // // // // console.log(mat);
+// // // // // // // const firstName = 'Cosmin';
+// // // // // // // const lastName = 'Ghe.';
+// // // // // // // const age =25;
+// // // // // // // let val;
+// // // // // // // val = firstName + " I'm " + lastName + ' age ' +age;
 // // // // // // //
 // // // // // // //
-// // // // // // //Concatenation & Appending
+// // // // // // // //Appending
+// // // // // // // val = 'Cosmin';
+// // // // // // // val +=' Gheg.'
+// // // // // // // val +=age;
+// // // // // // // console.log(val);
+// // // // // // // console.log(typeof val);
 // // // // // //
-// // // // // // const firstName = 'Cosmin';
-// // // // // // const lastName = 'Ghe.';
-// // // // // // const age =25;
+// // // // // //
+// // // // // // //Interpolation
+// // // // // // const firstName ='Cosmin';
+// // // // // // const lastName ='Hal';
+// // // // // // const age = 25;
 // // // // // // let val;
-// // // // // // val = firstName + " I'm " + lastName + ' age ' +age;
-// // // // // //
-// // // // // //
-// // // // // // //Appending
-// // // // // // val = 'Cosmin';
-// // // // // // val +=' Gheg.'
-// // // // // // val +=age;
-// // // // // // console.log(val);
-// // // // // // console.log(typeof val);
+// // // // // // val = `My name is ${firstName} and my last name is ${lastName} and my age is ${age}.`
+// // // // // // console.log(val)
 // // // // //
+// // // // // //Comparison Operators
+// // // // // const x = 20;
+// // // // // const y = 10;
 // // // // //
-// // // // // //Interpolation
-// // // // // const firstName ='Cosmin';
-// // // // // const lastName ='Hal';
-// // // // // const age = 25;
-// // // // // let val;
-// // // // // val = `My name is ${firstName} and my last name is ${lastName} and my age is ${age}.`
-// // // // // console.log(val)
+// // // // // //  == returns true or false
+// // // // // console.log(x == y);
+// // // // //
+// // // // // // === Strict equal -- Checks for value and type
+// // // // // console.log(x === y);
+// // // // //
+// // // // // // != not equal
+// // // // // console.log(x != y);
+// // // // //
+// // // // // // !== strict not equal
+// // // // // console.log(x !== y);
+// // // // //
+// // // // // //> Greater than
+// // // // // console.log(x > y);
+// // // // //
+// // // // // //> Greater than or equal
+// // // // // console.log(x >= y);
+// // // // //
+// // // // // //> Less than
+// // // // // console.log(x < y);
+// // // // //
+// // // // // //> Less than or equal
+// // // // // console.log(x <= y);
 // // // //
-// // // // //Comparison Operators
-// // // // const x = 20;
-// // // // const y = 10;
+// // // // //Logical Operates
 // // // //
-// // // // //  == returns true or false
-// // // // console.log(x == y);
+// // // // let x = 20;
+// // // // let y = 20;
 // // // //
-// // // // // === Strict equal -- Checks for value and type
-// // // // console.log(x === y);
+// // // // //&&(and)
+// // // // if (x > 20 && y < 40) {
+// // // //     console.log('true');
+// // // // } else {
+// // // //     console.log('false');
+// // // // }
 // // // //
-// // // // // != not equal
-// // // // console.log(x != y);
+// // // // //|| (or)
+// // // // if (x > 22 || y < 40) {
+// // // //     console.log('true');
+// // // // } else {
+// // // //     console.log('false');
+// // // // }
 // // // //
-// // // // // !== strict not equal
-// // // // console.log(x !== y);
+// // // // //! (not)
+// // // // x = true;
+// // // // y = false;
 // // // //
-// // // // //> Greater than
-// // // // console.log(x > y);
+// // // // if (!x) {
+// // // //     console.log('true');
+// // // // } else {
+// // // //     console.log('false');
+// // // // }
 // // // //
-// // // // //> Greater than or equal
-// // // // console.log(x >= y);
+// // // // //Ternary Operator
+// // // // const z = y ? 'True' : 'False';
 // // // //
-// // // // //> Less than
-// // // // console.log(x < y);
-// // // //
-// // // // //> Less than or equal
-// // // // console.log(x <= y);
+// // // // console.log(z);
 // // //
-// // // //Logical Operates
+// // // //Assignment operatos
+// // // const x = 10;
+// // // const y = 20;
+// // // let val = 15;
 // // //
-// // // let x = 20;
-// // // let y = 20;
+// // // //+=Adds and assign operators
+// // // val += 5;
 // // //
-// // // //&&(and)
-// // // if (x > 20 && y < 40) {
-// // //     console.log('true');
-// // // } else {
-// // //     console.log('false');
-// // // }
+// // // //-=Substract and assign operators
+// // // val -= 2;
 // // //
-// // // //|| (or)
-// // // if (x > 22 || y < 40) {
-// // //     console.log('true');
-// // // } else {
-// // //     console.log('false');
-// // // }
+// // // //*=Multiply and assign operators
+// // // val *= 3;
 // // //
-// // // //! (not)
-// // // x = true;
-// // // y = false;
+// // // // /=Divide and assign operators
+// // // val /= 4;
 // // //
-// // // if (!x) {
-// // //     console.log('true');
-// // // } else {
-// // //     console.log('false');
-// // // }
-// // //
-// // // //Ternary Operator
-// // // const z = y ? 'True' : 'False';
-// // //
-// // // console.log(z);
+// // // // %=Modulus and assign operators
+// // // val %= 5;
+// // // console.log(val)
 // //
-// // //Assignment operatos
-// // const x = 10;
-// // const y = 20;
-// // let val = 15;
+// // //Arrays amd Array Methods
 // //
-// // //+=Adds and assign operators
-// // val += 5;
+// // //Brackets
+// // const jobs =['Developer','PHP', 'Javascript'];
 // //
-// // //-=Substract and assign operators
-// // val -= 2;
+// // //Array Constructor
+// // const varsta = new Array(22,23,31,8,12);
 // //
-// // //*=Multiply and assign operators
-// // val *= 3;
+// // //Mixed data types
+// // const mixed =[24, 'Cosmin', 'Romania', undefined, true ];
 // //
-// // // /=Divide and assign operators
-// // val /= 4;
+// // //Mutate to show diferent things
+// // let test;
 // //
-// // // %=Modulus and assign operators
-// // val %= 5;
-// // console.log(val)
+// // //Get the lenght of the array
+// // test=varsta.length;
+// //
+// // //Check if it an array
+// // test = Array.isArray(varsta);
+// //
+// // //Get specific Value
+// // //Index always starts with 0
+// // test = jobs[1];
+// //
+// // //Add value to an array
+// // jobs.push('Data Analyst');
+// //
+// // //Remove value from an array
+// // jobs.pop();
+// //
+// // //Remove the test values
+// // test = jobs.shift();
+// //
+// // //Unshift
+// // test = jobs.unshift('Data Analyst')
+// //
+// // //Create a complete string
+// // test = jobs.join(' ')
+// //
+// // //Reverse
+// // //Changes will be permanently
+// // test = varsta.reverse();
+// //
+// // //Sort
+// // test = varsta.sort();
+// //
+// // console.log(test);
+// // console.log(test);
+// //
+// //Date and Time
+// const now = new Date();
 //
-// //Arrays amd Array Methods
+// let val = now.toString();
+// //Js counts months from 0 to 11
+// let birthday = new Date(1994, 11, 31, 20, 30, 0);
+// birthday = new Date('December 31 1994 20:30:00');
+// birthday = new Date('12/31/1995 20:30:00');
 //
-// //Brackets
-// const jobs =['Developer','PHP', 'Javascript'];
+// let x;
 //
-// //Array Constructor
-// const varsta = new Array(22,23,31,8,12);
+// //Get the month
+// x = birthday.getMonth();
+// //get the year
+// x = birthday.getFullYear();
+// //Get the day
+// x = birthday.getDay();
+// //Get the hours
+// x = birthday.getHours();
+// //Get the minutes
+// x = birthday.getMinutes();
+// console.log(x);
+// console.log(typeof x);
 //
-// //Mixed data types
-// const mixed =[24, 'Cosmin', 'Romania', undefined, true ];
-//
-// //Mutate to show diferent things
-// let test;
-//
-// //Get the lenght of the array
-// test=varsta.length;
-//
-// //Check if it an array
-// test = Array.isArray(varsta);
-//
-// //Get specific Value
-// //Index always starts with 0
-// test = jobs[1];
-//
-// //Add value to an array
-// jobs.push('Data Analyst');
-//
-// //Remove value from an array
-// jobs.pop();
-//
-// //Remove the test values
-// test = jobs.shift();
-//
-// //Unshift
-// test = jobs.unshift('Data Analyst')
-//
-// //Create a complete string
-// test = jobs.join(' ')
-//
-// //Reverse
-// //Changes will be permanently
-// test = varsta.reverse();
-//
-// //Sort
-// test = varsta.sort();
-//
-// console.log(test);
-// console.log(test);
-//
-//Date and Time
-
